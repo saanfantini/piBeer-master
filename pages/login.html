@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2326d14a17.js" crossorigin="anonymous"></script>
+</head>
+<body class="fondo-madera">
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/icon.png" alt="icon" class="icon"></a>
+        </div>
+        <nav>
+            <input type="checkbox" id="check-desplegar-lista">
+            <label for="check-desplegar-lista" class="desplegar-lista">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-bar">
+                <li class="nav-element element-inicio"><a href="../index.html" class="nav-animation">Inicio</a></li>
+                <li class="nav-element"><a href="tienda.html" class="nav-animation">Tienda</a></li>
+                <li class="nav-element"><a href="nosotros.html" class="nav-animation">Nosotros</a></li>
+                <li class="nav-element"><a href="soporte.html" class="nav-animation">Soporte</a></li>
+                <li class="nav-element"><a href="login.html"><img src="../images/icon-log-in.png" alt="log-in" class="icon-log-in"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="inicio-cuenta">
+        <div class="div-inicio-sesion">
+            <h2>Inicio de Sesion</h2>
+            <form action="iniciar-sesion" method="post" class="form-inicio-sesion">
+                <div class="div-form">
+                    <input type="text" id="user" name="user-user" class="mayus" required>
+                    <label for="user" class="label-element">
+                        <span>Nombre</span>
+                    </label>
+                </div>
+
+                <div class="div-form">
+                    <input type="mail" id="mail" name="user-mail"required>
+                    <label for="mail" class="label-element">
+                        <span>E-mail</span>
+                    </label>
+                </div>
+
+                <div class="div-form">
+                    <input type="password" id="password" name="user-password"required>
+                    <label for="password" class="label-element">
+                        <span>Contraseña</span>
+                    </label>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="boton-inicio-sesion">Iniciar sesion</button>
+                </div>
+            </form>
+        </div>
+        <h3 class="registrarse"><a href="./sign-up.html">Si todavia no tenes cuenta<br>Registrate acá</a></h3>
+        
+    </main>
+    <footer class="pie-pagina">
+        <div class="info-pie-pagina">
+            Copyright © 2022
+        </div>
+        <div>
+            <div class="telefono-pie-pagina">
+                <img src="../images/whatsapp_icono.png">
+                <h4>11-0000-0000</h4>
+            </div>
+            <h4><a href="#">Terminos y Condiciones</a></h4>
+        </div>
+    </footer>
+    
+</body>
+</html>

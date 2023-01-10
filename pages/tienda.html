@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2326d14a17.js" crossorigin="anonymous"></script>
+</head>
+<body class="pagina-tienda fondo-madera">
+    
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/icon.png" alt="icon" class="icon"></a>
+        </div>
+        <nav>
+            <input type="checkbox" id="check-desplegar-lista">
+            <label for="check-desplegar-lista" class="desplegar-lista">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-bar">
+                <li class="nav-element element-inicio"><a href="../index.html" class="nav-animation">Inicio</a></li>
+                <li class="nav-element"><a href="tienda.html" class="nav-animation">Tienda</a></li>
+                <li class="nav-element"><a href="nosotros.html" class="nav-animation">Nosotros</a></li>
+                <li class="nav-element"><a href="soporte.html" class="nav-animation">Soporte</a></li>
+                <li class="nav-element"><a href="login.html"><img src="../images/icon-log-in.png" alt="log-in" class="icon-log-in"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="servicios">
+            <div class="nuestros-productos">
+                <h1>Nuestros productos</h1>
+            </div>
+            <div class="container-cervezas">
+                <div class="servicio">
+                    <img src="../images/dorada.jpg" alt="" class="imagen-servicio imagen1">
+                    <h3>Rubia</h3>
+                    <p>Dorada y equlibrada</p>
+                </div>
+                <div class="servicio">
+                    <img src="../images/roja.jpg" alt="" class="imagen-servicio imagen2">
+                    <h3>Roja</h3>
+                    <p>Roja y acaramelada</p>
+                </div>
+                <div class="servicio">
+                    <img src="../images/stoutt.png" alt="" class="imagen-servicio imagen3">
+                    <h3>Negra</h3>
+                    <p>Dulce y de espuma cremosa</p>
+                </div>
+                <div class="servicio">
+                    <img src="../images/ipa.jpg" alt="" class="imagen-servicio imagen4">
+                    <h3>IPA</h3>
+                    <p>Con aroma a frutas cítricas</p>
+                </div>
+                <div class="servicio">
+                    <img src="../images/apa.jpg" alt="" class="imagen-servicio imagen5">
+                    <h3>APA</h3>
+                    <p>Espuma blanquecina, de buena retención</p>
+                </div>
+                <div class="servicio">
+                    <img src="../images/lager.jpg" alt="" class="imagen-servicio imagen6">
+                    <h3>Lager</h3>
+                    <p>Espuma blanca de buena retención</p>
+                </div>
+            </div>
+            <div class="contratar-servicio tabla-servicio">
+                <h2>¡Encarga nuestras Cervezas!</h2>
+                    <form class="formu form-tienda" action="compra">
+                        <div class="nombre elem-form">
+                            <input type="text" id="nombre" name="nombre" class="mayus"required>
+                            <label for="nombre" class="label-element">Nombre y Apellido</label>                           
+                        </div>
+                        
+                        <div class="seleccionar-servicios seleccion-cervezas">
+                                <label for="rubia">Rubia</label>
+                                <input type="number" id="rubia" name="rubiacheck" value="0" min="0" max="99"><br>
+                                <label for="roja">Roja</label>
+                                <input type="number" id="roja" name="rojacheck" value="0" min="0" max="99"><br>
+                                <label for="negra">Negra</label>
+                                <input type="number" id="negra" name="negracheck" value="0" min="0" max="99"><br>
+                                <label for="ipa">IPA</label>
+                                <input type="number" id="ipa" name="ipacheck" value="0" min="0" max="99"><br>
+                                <label for="apa">APA</label>
+                                <input type="number" id="apa" name="apacheck" value="0" min="0" max="99"><br>
+                                <label for="lager">Lager</label>
+                                <input type="number" id="lager" name="lagercheck" value="0" min="0" max="99"><br>
+                        </div>
+                        
+                        <div class="telefono elem-form">
+                            <input type="tel" id="telefono" name="telefono" maxlength="12"required>
+                            <label for="telefono">Telefono </label>
+                        </div>
+                        
+                        <div class="boton elem-form">
+                            <div class="text-center">
+                                <button type="submit" class="boton-submit-tienda">Enviar</button>
+                            </div>
+                            
+                        </div>
+                    </form>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="pie-pagina">
+        <div class="info-pie-pagina">
+            Copyright © 2022
+        </div>
+        <div>
+            <div class="telefono-pie-pagina">
+                <img src="../images/whatsapp_icono.png">
+                <h4>11-0000-0000</h4>
+            </div>
+            <h4><a href="#">Terminos y Condiciones</a></h4>
+        </div>
+    </footer>
+</body>
+</html>
